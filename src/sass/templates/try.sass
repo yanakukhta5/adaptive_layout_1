@@ -1,0 +1,99 @@
+.try
+ position: relative
+ z-index: 2
+ overflow: hidden 
+ padding-bottom: 4%
+ &::before
+  content: ""
+  width: 100%
+  height: 1000px
+  position: absolute
+  background-image: url('../img/try/background.png')
+  z-index: 1
+  top: -25%
+
+ &-title
+  display: inline
+  color: #231F1C
+  z-index: 5
+  @media screen and (max-width: 520px)
+   font-size: 24px
+   line-height: 28px
+  & span
+   display: inline
+   color: #9F261D
+
+ &-items
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-column-gap: 30px
+  grid-row-gap: 30px
+  width: 80%
+  @media screen and (max-width: 850px)
+   grid-column-gap: 20px
+   grid-row-gap: 15px
+   width: 70%
+  @media screen and (max-width: 520px)
+   grid-template-columns: 1fr
+   grid-row-gap: 10px
+   width: 85%
+
+ &-item
+  flex-direction: column
+  background-color: #fff
+  border-radius: 8px
+  box-shadow: 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border: 1px solid #F0F0F1
+  padding: 20px 50px 20px 30px
+  z-index: 2
+  @media screen and (max-width: 850px)
+   padding: 15px 20px 15px 20px
+  @media screen and (max-width: 520px)
+   width: 100%
+   padding: 10px
+
+  &__title
+   font-family: 'Roboto.bold'
+   font-size: 36px
+   line-height: 42px
+   text-transform: uppercase
+   color: #231F1C
+   margin-bottom: 10px
+   @media screen and (max-width: 850px)
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 10px
+   @media screen and (max-width: 520px)
+    font-size: 14px
+    line-height: 16px
+    margin-bottom: 5px
+
+  &__text
+   font-family: 'Roboto.regular'
+   font-size: 14px
+   line-height: 140%
+   @media screen and (max-width: 850px)
+    font-size: 12px
+   @media screen and (max-width: 520px)
+    font-size: 10px
+ 
+ &-img
+  position: absolute
+  bottom: 20px
+  z-index: 4
+  right: -10%
+  top: 30%
+  @media screen and (max-width: 850px)
+   transform: scale(0.8)
+   right: -15%
+   bottom: -4%
+  @media screen and (max-width: 600px)
+   right: -25%
+  @media screen and (max-width: 520px)
+   transform: scale(0.5)
+   right: -35%
+   top: 0
+  @media screen and (max-width: 430px)
+   right: -42%
+  @media screen and (max-width: 350px)
+   right: -60%

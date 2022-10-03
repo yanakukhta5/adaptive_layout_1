@@ -1,0 +1,219 @@
+.price
+ background: #F0F0F1
+ padding-bottom: 156px
+ @media screen and (max-width: 850px)
+  padding-bottom: 100px
+ @media screen and (max-width: 520px)
+  padding-bottom: 80px
+ &-title
+  color: #333333
+  font-size: 70px
+  line-height: 100%
+  font-family: 'Roboto.bold'
+  margin-bottom: 20px
+  @media screen and (max-width: 850px)
+   font-size: 50px
+   line-height: 59px
+   margin-bottom: 60px
+  @media screen and (max-width: 520px)
+   margin-bottom: 20px
+   font-size: 36px
+   line-height: 42px
+   
+ &-text
+  font-family: 'Roboto.regular'
+  font-size: 20px
+  line-height: 150%
+  color: #4F4F4F
+  max-width: 717px
+  @media screen and (max-width: 850px)
+   font-size: 16px
+   line-height: 160%
+   max-width: 78%
+  @media screen and (max-width: 520px)
+   font-size: 14px
+   line-height: 140%
+   max-width: 100%
+
+ &-swiper
+  position: unset
+  margin-top: 70px
+  min-width: 0
+  width: 100%
+  overflow-x: hidden
+  overflow-y: auto
+  @media screen and (max-width: 850px)
+   margin-top: 40px
+
+ &-slide
+  border-radius: 20px
+  position: relative
+  height: 600px
+  width: 100%
+  overflow: hidden
+  @media screen and (max-width: 850px)
+   height: 500px
+  @media screen and (max-width: 520px)
+   height: 450px
+  &_1
+   background-image: url('../img/price/_1.jpg')
+  &_2
+   background-image: url('../img/price/_2.jpg')
+  &_3
+   background-image: url('../img/price/_3.jpg')
+  &_4
+   background-image: url('../img/price/_4.jpg')
+  &_5
+   background-image: url('../img/price/_5.jpg')
+ 
+ &-button
+  width: 70px
+  height: 70px
+  box-shadow: 0px 106px 145px rgba(29, 17, 17, 0.08), 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border-radius: 15px
+  z-index: 2
+  top: 100px
+  justify-content: center
+  align-items: center
+  opacity: 1 !important
+  &-next
+   right: 30px
+   background-color: #FFFFFF
+   &::after
+    content: 'next'
+    color: #6A2823
+    position: absolute
+    top: 15px
+    width: 22px
+    height: 22px
+    background-size: contain
+    background-image: url('../img/button-background.png')
+    @media screen and (max-width: 850px)
+     font-size: 30px
+     right: 10px
+  &-prev
+   left: 85%
+   @media screen and (max-width: 850px)
+    left: 80%
+   &::after
+    content: 'prev'
+    position: absolute
+    top: 15px
+    color: #6A2823
+    width: 22px
+    height: 22px
+    background-size: contain
+    background-image: url('../img/button-background.png')
+    @media screen and (max-width: 850px)
+     font-size: 30px
+   @media screen and (max-width: 850px)
+    right: 95px
+   background-image: url('../img/button-background.png')
+   background-color: #FFFFFF
+  @media screen and (max-width: 850px)
+   top: 80px
+   width: 55px
+   height: 55px
+  @media screen and (max-width: 520px)
+   display: none
+
+ &-button
+  position: absolute
+  margin-top: 210px
+  background: #FFFFFF
+  box-shadow: 0px 106px 145px rgba(29, 17, 17, 0.08), 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border-radius: 15px
+  @media screen and (max-width: 850px)
+   margin-top: 248px
+  &-prev
+   @media screen and (max-width: 1170px)
+    margin-left: -50px
+   @media screen and (max-width: 770px)
+    margin-left: -30px
+   @media screen and (max-width: 580px)
+    margin-left: -45px
+
+ &-content
+  background: rgba(29, 17, 17, 0.2)
+  backdrop-filter: blur(50px)
+  height: 100%
+  width: 75%
+  position: absolute
+  right: 0
+  flex-direction: column
+  color: #fff
+  padding: 20px 15px 30px 15px
+ 
+ &-subtitle
+  font-family: 'Roboto.bold'
+  color: #FFFFFF
+  font-size: 24px
+  line-height: 28px
+  margin-bottom: 20px
+  @media screen and (max-width: 850px)
+   font-size: 16px
+   line-height: 19px
+  @media screen and (max-width: 520px)
+   font-size: 14px
+   line-height: 16px
+   margin-bottom: 10px
+
+ &-list
+  font-family: 'Roboto.regular'
+  flex-direction: column
+  margin-bottom: 15px
+  padding-left: 20px
+  font-size: 14px
+  line-height: 140%
+  @media screen and (max-width: 850px)
+   font-size: 12px
+   line-height: 140%
+   padding-left: 15px
+  @media screen and (max-width: 520px)
+   padding-left: 10px
+
+ &-li
+  display: list-item
+  list-style: disc
+  list-style-position: outside
+  margin-bottom: 10px
+
+ &-miniblock
+  flex-direction: column
+  margin-bottom: 15px
+  @media screen and (max-width: 850px)
+   margin-bottom: 10px
+  @media screen and (max-width: 520px)
+   margin-bottom: 5px
+
+ &-mintitle
+  font-family: 'Roboto.regular'
+  font-size: 12px
+  line-height: 140%
+  color: #D4D4D4
+  @media screen and (max-width: 850px)
+   font-size: 10px
+   line-height: 140%
+
+ &-minitext
+  font-family: 'Roboto.bold'
+  font-size: 24px
+  line-height: 28px
+  @media screen and (max-width: 850px)
+   font-size: 16px
+   line-height: 19px
+  @media screen and (max-width: 520px)
+   font-size: 14px
+   line-height: 16px
+
+ &-link
+  font-family: 'Roboto.bold'
+  height: 59px
+  border: none
+  background: #6A2823
+  box-shadow: 0px 44.2843px 60.5775px rgba(106, 40, 35, 0.18), 0px 23.6765px 32.3876px rgba(106, 40, 35, 0.16), 0px 13.2728px 18.1562px rgba(106, 40, 35, 0.14), 0px 7.04911px 9.64265px rgba(106, 40, 35, 0.12), 0px 2.93329px 4.01252px rgba(106, 40, 35, 0.1)
+  border-radius: 10px
+  color: #fff
+  justify-content: center
+  align-items: center
+  margin-top: auto

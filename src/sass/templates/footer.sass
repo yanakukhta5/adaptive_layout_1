@@ -1,0 +1,151 @@
+.footer
+ position: relative
+ font-family: 'Roboto.regular'
+ background: #231F1C
+ padding: 40px 0px 73px 0px
+ @media screen and (max-width: 850px)
+  padding: 55px 0px 46px 0px
+  background: #333333
+
+ &-toTop
+  position: absolute
+  width: 70px
+  height: 70px
+  background-color: #fff
+  top: -35px
+  right: 20px
+  box-shadow: 0px 106px 145px rgba(29, 17, 17, 0.08), 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border-radius: 15px
+  justify-content: center
+  align-items: center
+  &::before
+   width: 18px
+   height: 18px
+   background-repeat: no-repeat
+   content: ''
+   background-image: url('../img/footer/polygon.svg')
+   background-position: center
+  @media screen and (max-width: 850px)
+   width: 54px
+   height: 54px
+   top: 10px
+
+ & .container
+  flex-direction: row
+  @media screen and (max-width: 850px)
+   flex-direction: column
+
+ &-data
+  font-family: 'Roboto.bold'
+  flex-direction: column
+  margin-right: 72px
+  @media screen and (max-width: 850px)
+   flex-direction: row
+   justify-content: space-between
+   align-items: center
+   margin-right: 0px
+  @media screen and (max-width: 520px)
+   flex-direction: column
+   align-items: flex-start
+
+ &-img
+  &__mobile
+   display: none
+   @media screen and (max-width: 850px)
+    display: flex
+  &__desc
+   width: 100%
+   object-fit: contain
+   @media screen and (max-width: 850px)
+   display: none
+  &__wrapper
+   width: 197px
+   height: 60px
+   @media screen and (max-width: 850px)
+    width: 123px
+    height: 54px
+
+ &-lists
+  flex-direction: row
+  @media screen and (max-width: 850px)
+   margin-top: 30px
+  @media screen and (max-width: 520px)
+   flex-direction: column
+   margin-top: 10px
+
+ &-copyright
+  position: absolute
+  bottom: 16px
+  color: #949494
+  font-size: 12px
+  line-height: 140%
+  @media screen and (max-width: 850px)
+   font-size: 10px
+ 
+ &-tel
+  font-family: 'Roboto.bold'
+  font-size: 36px
+  line-height: 42px
+  color: #B49391
+  margin-top: 30px
+  @media screen and (max-width: 850px)
+   margin-top: 0
+   font-size: 24px
+   line-height: 28px
+  @media screen and (max-width: 520px)
+   margin-top: 30px
+
+ &-site
+  font-family: 'Roboto.bold'
+  font-size: 16px
+  line-height: 19px
+  color: #FFFFFF
+  margin-top: 26px
+  @media screen and (max-width: 850px)
+   margin-top: 0
+  @media screen and (max-width: 520px)
+   margin-top: 10px
+
+ &-list
+  margin-right: 40px
+  flex-direction: column
+  &:last-child
+   margin-right: 0px
+  @media screen and (max-width: 850px)
+   margin-right: 30px
+  @media screen and (max-width: 520px)
+   margin-right: 0
+   margin-top: 20px
+
+  &__title
+   max-width: 250px
+   width: 100%
+   font-family: 'Roboto.bold'
+   font-size: 24px
+   line-height: 28px
+   color: #4F4F4F
+   opacity: 0.6
+   margin-bottom: 50px
+   @media screen and (max-width: 850px)
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 20px
+   @media screen and (max-width: 520px)
+    margin-bottom: 10px
+
+  &__ul
+   max-width: 220px
+   width: 100%
+   flex-direction: column
+
+  &__li
+   font-size: 16px
+   line-height: 160%
+   color: #FFFFFF
+   margin-bottom: 10px
+   @media screen and (max-width: 850px)
+    margin-bottom: 8px
+    font-size: 14px
+    line-height: 140%
+   @media screen and (max-width: 520px)
+    margin-bottom: 5px

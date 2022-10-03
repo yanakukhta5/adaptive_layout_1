@@ -1,0 +1,301 @@
+.header
+ position: fixed
+ z-index: 100
+ background: rgba(35, 31, 28, 0.7)
+ backdrop-filter: blur(50px)
+ font-size: 20px
+ @media screen and (max-width: 850px)
+  font-size: 16px
+  backdrop-filter: unset
+
+ &_container
+  flex-direction: row
+  justify-content: space-between
+  
+ &-logo
+  width: 223px
+  padding: 16px 0px
+  @media screen and (max-width: 1200px)
+   width: 200px
+  @media screen and (max-width: 850px)
+   padding: 10px 0px
+
+  & img
+   object-fit: contain
+   width: 100%
+   @media screen and (max-width: 850px)
+    width: 130px
+    height: 40px
+   @media screen and (max-width: 520px)
+    width: 100px
+    height: 30px
+
+ &-menu
+  display: grid
+  grid-template-columns: 1fr 3fr
+  grid-template-rows: 1fr 1fr
+  font-family: 'Roboto.bold'
+  position: relative
+  overflow: hidden
+  @media screen and (max-width: 1200px)
+   width: 74%
+  @media screen and (max-width: 850px)
+   transform: translateX(100%)
+   grid-template-columns: 1fr
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+   height: 100vh
+   position: fixed
+   width: 50vw
+   right: 0
+   background: rgba(35, 31, 28, 0.7)
+   backdrop-filter: blur(50px)
+  @media screen and (max-width: 520px)
+   width: 100vw
+
+  &.active
+   transform: translateX(0%)
+
+  &__links
+   align-items: center
+   justify-content: space-between
+   grid-area: 1 / 2 / 2 / 3
+   padding-left: 40px
+   @media screen and (max-width: 1200px)
+    padding-left: 10px
+   @media screen and (max-width: 850px)
+    grid-area: 7 / 1 / 8 / 2
+    padding: 0px 25px 25px 25px
+
+  &__bottom
+   font-family: 'Roboto.regular'
+   grid-area: 2 / 1 / 3 / 3
+   color: #D4D4D4
+   @media screen and (max-width: 1200px)
+    justify-content: flex-end
+   @media screen and (max-width: 850px)
+    padding: 25px
+    margin-top: 50px
+  
+  &__search
+   font-size: 12px
+   grid-area: 1 / 1 / 2 / 2
+   color: #D4D4D4
+   width: 100%
+   height: 100%
+   padding: 16px 0px 8px 0px
+   @media screen and (max-width: 850px)
+    height: 60px
+    padding: 0
+   @media screen and (max-width: 520px)
+    height: 50px
+ 
+ &-form
+  width: 100%
+  height: 100%
+  &__text
+   height: 100%
+   border: none
+   border-radius: 0px 5px 5px 0px
+   background: rgba(240, 240, 241, 0.3)
+   padding-left: 10px
+   &:hover
+    background: #fff
+   @media screen and (max-width: 850px)
+    transform: translateX(-150%)
+    width: 200px
+   &.active
+    transform: translateX(0%)
+  &__button
+   width: 26px
+   height: 100%
+   border: none
+   border-radius: 5px 0px 0px 5px
+   background-color: #6A2823 !important
+   background-image: url("../img/header/search.svg")
+   background-repeat: no-repeat
+   background-position: center
+   &:hover
+    background-color: #9F261D !important
+    background-image: url("../img/header/search.svg")
+    background-repeat: no-repeat
+    background-position: center
+   &:active
+    background-color: #501410 !important
+    background-image: url("../img/header/search.svg")
+    background-repeat: no-repeat
+    background-position: center
+   @media screen and (max-width: 850px)
+    width: 60px
+   @media screen and (max-width: 520px)
+    width: 50px
+
+ &-navigation
+  @media screen and (max-width: 850px)
+   width: 100%
+
+ &-nav
+  width: 100%
+  height: 100%
+ 
+ &-ul
+  height: 100%
+  @media screen and (max-width: 850px)
+   flex-direction: column
+
+ &-li
+  height: 100%
+  border-top: 2px solid #949494
+  margin: 0px 1px
+  &:hover
+   border-top: 2px solid  #9F261D
+   @media screen and (max-width: 850px)
+    border-top: 0px
+  &:active
+   background-color: #6A2823
+  @media screen and (max-width: 850px)
+   border-top: 0px
+   margin-bottom: 5px
+
+ &-link
+  width: 100%
+  height: 100%
+  align-items: center
+  padding: 0px 12px
+  color: #fff
+  @media screen and (max-width: 1200px)
+   padding: 0px 7px
+   font-size: 14px
+  &:hover
+   color: #fff
+  &:visited
+   color: #fff
+  @media screen and (max-width: 850px)
+   text-align: center
+   justify-content: center
+   background-color: #231F1C80
+   border-radius: 5px
+   padding: 15px
+
+ &-social
+  border-radius: 50%
+  width: 26px
+  height: 26px
+  background-color: rgba(35, 31, 28, 0.8)
+  justify-content: center
+  align-items: center
+  margin-right: 10px
+  @media screen and (max-width: 850px)
+   width: 50px
+   height: 50px
+  &:hover
+   background: #9F261D
+  &:active
+   background: #6A2823
+  &__img
+   width: 12px
+   height: 12px
+
+ &-socials
+  justify-content: center
+  @media screen and (max-width: 850px)
+   width: 100%
+
+ &-tel
+  @media screen and (max-width: 850px)
+   position: absolute
+   flex-direction: column
+  &__text
+   color: #fff
+   font-size: 20px
+   align-items: center
+   line-height: 23px
+   @media screen and (max-width: 1200px)
+    font-size: 14px
+   @media screen and (max-width: 860px)
+    font-size: 12px
+   @media screen and (max-width: 850px)
+    position: fixed
+    font-size: 36px
+    line-height: 42px
+    text-align: center
+    font-size: 36px
+    line-height: 42px
+    top: 10%
+   @media screen and (max-width: 690px)
+    font-size: 30px
+   @media screen and (max-width: 50px)
+    font-size: 25px
+   @media screen and (max-width: 520px)
+    font-size: 24px
+    line-height: 28px
+    width: 100%
+    left: 0
+    justify-content: center
+  &__button
+   font-family: 'Roboto.bold'
+   width: 200px
+   background-color: #fff
+   border-radius: 10px
+   text-align: center
+   border: 0px
+   align-items: center
+   font-size: 16px
+   line-height: 19px
+   padding: 6px
+   justify-content: center
+   color: #6A2823
+   margin-left: 15px
+   @media screen and (max-width: 1200px)
+    width: auto
+    font-size: 12px
+   @media screen and (max-width: 850px)
+    position: fixed
+    bottom: 10%
+    margin: 0px 0px 30px 0px
+    width: 85%
+
+ &-mobile
+  display: none
+  position: fixed
+  flex-direction: column
+  &::before
+   content: ''
+   position: relative
+   width: 100%
+   height: 2px
+   top: 8px
+   background-color: #949494
+  &::after
+   content: ''
+   position: relative
+   width: 100%
+   height: 2px
+   top: 15px
+   background-color: #949494
+  @media screen and (max-width: 850px)
+   display: flex
+   height: 30px
+   width: 40px
+   right: 10px
+   top: 15px
+   z-index: 2
+   border-top: 2px solid #949494
+   border-bottom: 2px solid #949494
+   border-left: 0px
+   border-right: 0px
+   background-color: transparent
+   padding: 0px
+  @media screen and (max-width: 850px)
+    top: 10px
+   
+  &.active
+   border: 0px
+   align-items: center
+   &::before
+    width: 26px
+    top: 17px
+    transform: rotate(45deg)
+   &::after
+    width: 26px
+    transform: rotate(-45deg)
+   @media screen and (max-width: 850px)

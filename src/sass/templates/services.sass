@@ -1,0 +1,164 @@
+.services
+ padding: 110px 0px 100px 0px
+ background: #F0F0F1
+ overflow-x: hidden
+ @media screen and (max-width: 850px)
+  padding: 0px 0px 80px 0px
+ @media screen and (max-width: 520px)
+  padding: 0px 0px 60px 0px
+
+ &-swiper
+  width: 100%
+  overflow-x: hidden
+  position: unset
+  @media screen and (max-width: 520px)
+   overflow: unset
+
+ &-slide
+  border-radius: 15px
+  overflow: hidden
+  position: relative
+  height: 550px
+  @media screen and (max-width: 850px)
+   height: 400px
+  @media screen and (max-width: 520px)
+   height: 350px
+  &_1
+   background-image: url('../img/services/services_1.jpg')
+  &_2
+   background-image: url('../img/services/services_2.jpg')
+  &_3
+   background-image: url('../img/services/services_3.jpg')
+  &_4
+   background-image: url('../img/services/services_4.jpg')
+
+  &__bottom
+   background: rgba(79, 79, 79, 0.2)
+   backdrop-filter: blur(50px)
+   height: 41%
+   width: 100%
+   position: absolute
+   bottom: 0
+   flex-direction: column
+   padding: 15px
+   justify-content: space-between
+   @media screen and (max-width: 850px)
+    padding: 15px 30px 30px 30px
+    height: 47%
+   @media screen and (max-width: 520px)
+    padding: 15px
+
+ & .swiper-scrollbar
+  bottom: -50px
+  width: 96%
+  left: 25px
+  &-drag
+   background: #6A2823
+
+ &-img
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+ &-button
+  width: 70px
+  height: 70px
+  box-shadow: 0px 106px 145px rgba(29, 17, 17, 0.08), 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border-radius: 15px
+  z-index: 2
+  top: 100px
+  justify-content: center
+  align-items: center
+  opacity: 1 !important
+  &-next
+   right: 30px
+   background-color: #FFFFFF
+   &::after
+    content: 'next'
+    color: #6A2823
+    position: absolute
+    top: 15px
+    width: 22px
+    height: 22px
+    background-size: contain
+    background-image: url('../img/button-background.png')
+    @media screen and (max-width: 850px)
+     font-size: 30px
+     left: 22px
+  &-prev
+   left: 85%
+   @media screen and (max-width: 850px)
+    left: 73%
+   &::after
+    content: 'prev'
+    position: absolute
+    top: 15px
+    color: #6A2823
+    width: 22px
+    height: 22px
+    background-size: contain
+    background-image: url('../img/button-background.png')
+    @media screen and (max-width: 850px)
+     font-size: 30px
+   @media screen and (max-width: 850px)
+    right: 95px
+   background-image: url('../img/button-background.png')
+   background-color: #FFFFFF
+  @media screen and (max-width: 850px)
+   top: 80px
+   width: 55px
+   height: 55px
+  @media screen and (max-width: 520px)
+   display: none
+
+ &-title
+  flex-direction: column
+  font-family: 'Roboto.bold'
+  color: #333333
+  margin-top: 0px
+  @media screen and (max-width: 850px)
+   margin-bottom: 30px
+  @media screen and (max-width: 520px)
+   margin-bottom: 40px
+  &__span
+   color: #6A2823 
+
+ &-subtitle
+  font-family: 'Roboto.bold'
+  text-align: center
+  color: #ffffff
+  font-size: 24px
+  line-height: 28px
+  justify-content: center
+  @media screen and (max-width: 850px)
+   font-size: 16px
+   line-height: 19px
+  @media screen and (max-width: 520px)
+   font-size: 14px
+   line-height: 16px
+ 
+ &-text
+  font-family: 'Roboto.regular'
+  text-align: center
+  font-size: 14px
+  line-height: 140%
+  text-align: center
+  color: #F0F0F1
+  @media screen and (max-width: 850px)
+   font-size: 10px
+   line-height: 140%
+  @media screen and (max-width: 520px)
+   font-size: 10px
+   line-height: 140%
+ 
+ &-link
+  font-family: 'Roboto.bold'
+  background: #FFFFFF
+  box-shadow: 0px 106px 145px rgba(29, 17, 17, 0.08), 0px 44.2843px 60.5775px rgba(29, 17, 17, 0.0575083), 0px 23.6765px 32.3876px rgba(29, 17, 17, 0.0476886), 0px 13.2728px 18.1562px rgba(29, 17, 17, 0.04), 0px 7.04911px 9.64265px rgba(29, 17, 17, 0.0323114), 0px 2.93329px 4.01252px rgba(29, 17, 17, 0.0224916)
+  border-radius: 10px
+  border: 0px
+  color: #6A2823
+  width: 100%
+  justify-content: center
+  align-items: center
+  min-height: 40px

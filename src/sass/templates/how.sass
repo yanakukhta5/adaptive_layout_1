@@ -1,0 +1,150 @@
+.how
+ color: #333333
+ padding-bottom: 90px
+ color: #333333
+ @media screen and (max-width: 850px)
+  padding-bottom: 75px
+ @media screen and (max-width: 520px)
+  padding-bottom: 50px
+
+ &-masonry
+  display: block
+  width: 100%
+  columns: 3
+  column-gap: 30px
+  @media screen and (max-width: 850px)
+   column-gap: 15px
+  @media screen and (max-width: 520px)
+   columns: 2
+   column-gap: 10px 
+
+ &-card
+  padding: 140px 30px 20px 30px
+  width: 100%
+  max-width: 360px
+  flex-direction: column
+  background: #F7F7F8
+  border: 1px solid #D4D4D4
+  border-radius: 20px
+  position: relative
+  margin-bottom: 30px
+  break-inside: avoid
+  @media screen and (max-width: 850px)
+   padding: 50px 15px 15px 15px
+   border-radius: 15px
+   margin-bottom: 15px
+  @media screen and (max-width: 520px)
+   padding: 50px 10px 10px 10px
+   border-radius: 10px
+   margin-bottom: 10px
+  &::after
+   content: ''
+   background-image: url('../img/how/line.svg')
+   background-size: contain
+   background-repeat: no-repeat
+   position: absolute
+   max-width: 190px
+   width: 100%
+   height: 26px
+   top: 57px
+   right: 30px
+   @media screen and (max-width: 850px)
+    max-width: 110px
+    top: 15px
+    right: 15px
+   @media screen and (max-width: 520px)
+    max-width: 80px
+    right: 7px
+    top: 25px
+  &::before
+   content: ''
+   position: absolute
+   width: 100px
+   height: 100px
+   top: 20px
+   left: 30px
+   @media screen and (max-width: 850px)
+    transform: scale(0.5)
+    top: -20px
+    left: -15px
+   @media screen and (max-width: 520px)
+    transform: scale(0.3)
+    left: -25px
+
+  &_1
+   &::before
+    background-image: url('../img/how/_1.svg')
+    background-repeat: no-repeat
+    @media screen and (max-width: 520px)
+     left: -26px
+
+  &_2
+   &::before
+    background-image: url('../img/how/_2.svg')
+    background-repeat: no-repeat
+    @media screen and (max-width: 850px)
+     top: 0px
+    @media screen and (max-width: 520px)
+     top: -25px
+
+  &_3
+   &::before
+    background-image: url('../img/how/_3.svg')
+    background-repeat: no-repeat
+    @media screen and (max-width: 850px)
+     top: -2px
+    @media screen and (max-width: 520px)
+     top: -20px
+
+  &_4
+   &::before
+    background-image: url('../img/how/_4.svg')
+    background-repeat: no-repeat
+
+  &_5
+   &::before
+    background-image: url('../img/how/_5.svg')
+    background-repeat: no-repeat
+    @media screen and (max-width: 520px)
+     top: 0px
+
+  &_6
+   &::before
+    background-image: url('../img/how/_6.svg')
+    background-repeat: no-repeat
+
+  &__title
+   font-family: 'Roboto.bold'
+   font-size: 36px
+   line-height: 42px
+   margin-bottom: 10px
+   @media screen and (max-width: 850px)
+    font-size: 20px
+    line-height: 28px
+    margin: 15px 0px 10px 0px
+   @media screen and (max-width: 520px)
+    font-size: 16px
+    line-height: 19px
+    margin-bottom: 5px
+    margin-top: 0px
+   &_2
+    @media screen and (max-width: 850px)
+     margin: 28px 0px 10px 0px
+    @media screen and (max-width: 520px)
+     margin: 0px 0px 10px 0px
+   &_3
+    @media screen and (max-width: 850px)
+     margin: 28px 0px 10px 0px
+    @media screen and (max-width: 520px)
+     margin: 0px 0px 10px 0px
+
+  &__text
+   font-family: 'Roboto.regular'
+   font-size: 16px
+   line-height: 160%
+   @media screen and (max-width: 850px)
+    font-size: 14px
+    line-height: 140%
+   @media screen and (max-width: 520px)
+    font-size: 10px
+    line-height: 140%
